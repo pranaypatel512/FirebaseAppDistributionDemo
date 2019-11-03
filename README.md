@@ -1,7 +1,7 @@
 ![banner](./images/firebase_app_distribution_pranay.png) 
 -------------------------------------------------------
 ## FirebaseAppDistributionDemo
------------------
+
 
 ### :bulb: Goal 
 
