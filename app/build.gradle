@@ -20,6 +20,34 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            firebaseAppDistribution {
+                releaseNotesFile="$projectDir/apprelease/releasebuild/release_note.txt"
+                //----------------OR---------
+                //releaseNotes="Here is new app release note"
+
+                testersFile="$projectDir/apprelease/releasebuild/testers.txt"
+                //----------------OR---------
+                //testers ="tester1@gmail.com,tester2@gmail.com"
+
+                groupsFile="$projectDir/apprelease/releasebuild/firebase_group.txt"
+                //----------------OR---------
+                //groups ="qa-team, android-testers"
+            }
+        }
+        debug{
+            firebaseAppDistribution {
+                releaseNotesFile="$projectDir/apprelease/debug/release_note.txt"
+                //----------------OR---------
+                //releaseNotes="Here is new app release note"
+
+                testersFile="$projectDir/apprelease/debug/testers.txt"
+                //----------------OR---------
+                //testers ="tester1@gmail.com,tester2@gmail.com"
+
+                groupsFile="$projectDir/apprelease/debug/firebase_group.txt"
+                //----------------OR---------
+                //groups ="qa-team, android-testers"
+            }
         }
     }
 }
@@ -32,3 +60,4 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.android.material:material:1.0.0'
 }
+apply plugin: 'com.google.gms.google-services'
