@@ -9,8 +9,7 @@ The main idea behind this repo is to beta app release using Firebase App Distrib
 
 ### :book: Blog:
 
-Coming soon...
-
+### **http://booleancoder.com/firebase-app-distribution-android-gradle/**
 
 ### Built With
 
